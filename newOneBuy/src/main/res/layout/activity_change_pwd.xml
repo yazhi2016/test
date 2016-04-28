@@ -1,0 +1,171 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signin_bg"
+    android:orientation="vertical"
+    tools:context="com.example.onebuy.ChangePwdActivity" >
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/onebuy" >
+
+        <TextView
+            android:id="@+id/text_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="登陆密码修改"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/ima_back_bar_padding"
+                android:src="@drawable/selector_ima_back_bar" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_nowaccount_changepwdact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="当前账号：123****456"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/signup_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp" >
+
+        <TextView 
+            android:id="@+id/text_changepwdact"
+            android:layout_centerVertical="true"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="当前密码："
+            />
+
+        <EditText
+            android:id="@+id/edit_oldpwd_mefra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/text_changepwdact"
+            android:inputType="textPassword"
+            android:background="@null"
+            android:ems="10"
+            android:hint="请输入6-20位密码" >
+        </EditText>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:text="" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp" >
+
+        <TextView 
+            android:id="@+id/text_changepwdact1"
+            android:layout_centerVertical="true"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="新密码："
+            />
+
+        <EditText
+            android:id="@+id/edit_newpwd_mefra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/text_changepwdact1"
+            android:background="@null"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="请输入新密码" >
+        </EditText>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:text="" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signup_pwd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp" >
+
+       <TextView 
+            android:id="@+id/text_changepwdact2"
+            android:layout_centerVertical="true"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="确认新密码："
+            />
+
+        <EditText
+            android:id="@+id/edit_newpwd2_mefra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/text_changepwdact2"
+            android:background="@null"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="重复输入新密码" >
+        </EditText>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_signin_mefra"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_corner_red"
+        android:text="确认修改"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/ima_product_allorder"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/noima" />
+
+        <TextView
+            android:id="@+id/text_title_allorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ima_product_allorder"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/ima_product_allorder"
+            android:text="(第4期)Apple watch 42毫米不锈钢表带" />
+
+        <TextView
+            android:id="@+id/text_allneed_allorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_title_allorder"
+            android:textSize="@dimen/textsize_allorder"
+            android:layout_below="@+id/text_title_allorder"
+            android:text="总需：5800人次" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/textsize_allorder"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_allneed_allorder"
+            android:layout_below="@+id/text_allneed_allorder"
+            android:text="获奖者：" />
+
+        <TextView
+            android:id="@+id/text_luckyman_allorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:textSize="@dimen/textsize_allorder"
+            android:layout_alignBottom="@+id/textView3"
+            android:singleLine="true"
+            android:layout_toRightOf="@+id/textView3"
+            android:textColor="@color/blue"
+            android:text="183***4685" />
+
+        <TextView
+            android:id="@+id/text_hepay_allorder"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/textsize_allorder"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_alignBottom="@+id/text_luckyman_allorder"
+            android:layout_toRightOf="@+id/text_luckyman_allorder"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:text="@string/_5" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:textSize="@dimen/textsize_allorder"
+            android:layout_below="@+id/textView3"
+            android:text="幸运号码：" />
+
+        <TextView
+            android:id="@+id/text_luckynum_allorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textView6"
+            android:layout_alignBaseline="@+id/textView6"
+            android:layout_alignBottom="@+id/textView6"
+            android:textSize="@dimen/textsize_allorder"
+            android:textColor="@color/onebuy"
+            android:text="1005767" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView6"
+            android:layout_below="@+id/textView6"
+            android:textSize="@dimen/textsize_allorder"
+            android:text="揭晓时间：" />
+
+        <TextView
+            android:id="@+id/text_time_allorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView8"
+            android:textSize="@dimen/textsize_allorder"
+            android:layout_toRightOf="@+id/textView6"
+            android:text="2015-10-15 18:38:12" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView8"
+            android:textSize="@dimen/textsize_allorder"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:layout_alignLeft="@+id/textView8"
+            android:text="本期参与：" />
+
+        <TextView
+            android:id="@+id/text_buynum_allorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView10"
+            android:layout_alignBottom="@+id/textView10"
+            android:layout_alignLeft="@+id/text_luckynum_allorder"
+            android:textColor="@color/onebuy"
+            android:textSize="@dimen/textsize_allorder"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/text_buynum_allorder"
+            android:layout_toRightOf="@+id/text_buynum_allorder"
+            android:textSize="@dimen/textsize_allorder"
+            android:text=" 人次" />
+
+        <TextView
+            android:id="@+id/text_lookcode_allorderact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_allorder"
+            android:layout_below="@+id/textView10"
+            android:layout_alignLeft="@+id/textView8"
+            android:textColor="@color/blue"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:text="查看我的号码" />
+        
+
+        <Button
+            android:id="@+id/btn_show_allorderact"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/text_lookcode_allorderact"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:background="@drawable/selector_corner_red_gray"
+            android:textColor="@color/white"
+            android:text="晒单" />
+
+        <ImageView
+            android:id="@+id/ima_win_allorderact"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="10dp"
+            android:layout_alignBottom="@+id/text_lookcode_allorderact"
+            android:layout_alignLeft="@+id/ima_product_allorder"
+            android:src="@drawable/nowin" />
+
+        <TextView 
+            android:id="@+id/text_mycode_allorderact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_lookcode_allorderact"
+            android:layout_alignRight="@+id/btn_show_allorderact"
+            android:layout_below="@+id/text_lookcode_allorderact"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:visibility="gone"
+            />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

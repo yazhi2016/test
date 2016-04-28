@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="购物车"
+            android:textColor="@color/bartextcolor"
+            android:textSize="20dp" />
+        
+         <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+    
+    <ListView
+        android:id="@+id/lv_shopfra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="1dp"
+        android:layout_below="@+id/bar"
+        android:layout_above="@+id/henxian_shopfra"
+        android:background="@color/white"
+        android:layout_centerHorizontal="true" >
+    </ListView>
+    
+    <TextView 
+        android:id="@+id/henxian_shopfra"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/gray"
+        android:layout_above="@+id/rela_bottom_shopfra"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rela_bottom_shopfra"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+        
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_red_gray"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="结算" />
+
+        <CheckBox
+            android:id="@+id/checkbox_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:button="@drawable/btn_check2"
+            android:text=" 全选"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/text_num_shopfra2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/button1"
+            android:textColor="@color/onebuy"
+            android:layout_marginRight="10dp"
+            android:text="0元" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/text_num_shopfra2"
+            android:layout_centerVertical="true"
+            android:text="合计" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/textView3"
+            android:layout_marginRight="15dp"
+            android:text="个产品" />
+        <TextView
+            android:id="@+id/text_num_shopfra"
+            android:layout_width="wrap_content"
+            android:textColor="@color/onebuy"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/textView4"
+            android:text="0" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/text_num_shopfra"
+            android:layout_marginLeft="5dp"
+            android:text="共" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="购物车空空如也"
+        android:id="@+id/text_nothing"
+        android:layout_alignTop="@+id/lv_shopfra"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="118dp"/>
+
+
+</RelativeLayout>

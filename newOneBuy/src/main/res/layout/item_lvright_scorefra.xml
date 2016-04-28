@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        android:paddingBottom="15dp"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/shape_strokegray_white"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <ImageView
+            android:id="@+id/ima_gvitem_homefra"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginTop="2dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/noima" />
+
+        <TextView
+            android:id="@+id/text_name_gvitem_homefra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ima_gvitem_homefra"
+            android:layout_alignRight="@+id/ima_gvitem_homefra"
+            android:layout_below="@+id/ima_gvitem_homefra"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ima_gvitem_homefra"
+            android:layout_below="@+id/text_name_gvitem_homefra"
+            android:text="价格："
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_text_lvitem_homefra" />
+        <TextView
+            android:id="@+id/text_allneed_gvitem_homefra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textprice"
+            android:layout_below="@+id/text_name_gvitem_homefra"
+            android:text="￥"
+            android:textColor="@color/onebuy"
+            android:textSize="@dimen/size_text_lvitem_homefra" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textprice"
+            android:layout_below="@+id/text_allneed_gvitem_homefra" >
+
+            <ImageView
+                android:id="@+id/ima_addtoshopcar"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/score23" />
+
+            <TextView
+                android:id="@+id/text_score_scorecity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/ima_addtoshopcar"
+                android:text="300"
+                android:textColor="@color/onebuy"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/text_surplus_gvitem_homefra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/ima_addtoshopcar"
+                android:text=""
+                android:textSize="@dimen/size_text_lvitem_homefra" />
+
+            <TextView
+                android:id="@+id/progress_now1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/progressbar1"
+                android:layout_below="@+id/progressbar1"
+                android:text=""
+                android:textColor="@color/onebuy"
+                android:textSize="@dimen/size_text_lvitem_homefra" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_exchange_scorefra"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/selector_corner_red_gray"
+            android:gravity="center"
+            android:text="兑换"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/ima_tagten_homefra"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/ima_gvitem_homefra"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            android:scaleType="fitXY"
+            android:src="@drawable/tentag" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rela_nothing_scorecity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rela_hasthing_scorecity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_weight="1"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginLeft="-2dp"
+        android:background="@drawable/shape_strokegray_white"
+        android:paddingRight="15dp" >
+
+        <ImageView
+            android:id="@+id/ima_gvitem_homefra2"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/noima" />
+
+        <TextView
+            android:id="@+id/text_name_gvitem_homefra2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ima_gvitem_homefra2"
+            android:layout_alignRight="@+id/ima_gvitem_homefra2"
+            android:layout_below="@+id/ima_gvitem_homefra2"
+            android:layout_centerHorizontal="true"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/black" />
+
+         <TextView
+            android:id="@+id/textprice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ima_gvitem_homefra2"
+            android:layout_below="@+id/text_name_gvitem_homefra2"
+            android:text="价格："
+            android:textColor="@color/black"
+            android:textSize="@dimen/size_text_lvitem_homefra" />
+        <TextView
+            android:id="@+id/text_allneed_gvitem_homefra2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/textprice2"
+            android:layout_below="@+id/text_name_gvitem_homefra2"
+            android:text="￥"
+            android:textColor="@color/onebuy"
+            android:textSize="@dimen/size_text_lvitem_homefra" />
+        
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textprice2"
+            android:layout_below="@+id/text_allneed_gvitem_homefra2" >
+
+            <ImageView
+                android:id="@+id/ima_addtoshopcar2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dp"
+                android:src="@drawable/score23" />
+
+            <TextView
+                android:id="@+id/text_score_scorecity2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/ima_addtoshopcar2"
+                android:text="300"
+                android:textColor="@color/onebuy"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/text_surplus_gvitem_homefra2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/ima_addtoshopcar2"
+                android:text=""
+                android:textSize="@dimen/size_text_lvitem_homefra" />
+
+            <TextView
+                android:id="@+id/progress_now2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/progressbar2"
+                android:layout_below="@+id/progressbar2"
+                android:text=""
+                android:textColor="@color/onebuy"
+                android:textSize="@dimen/size_text_lvitem_homefra" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_exchange_scorefra2"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/selector_corner_red_gray"
+            android:gravity="center"
+            android:text="兑换"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/ima_tagten_homefra2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/ima_gvitem_homefra2"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            android:scaleType="fitXY"
+            android:src="@drawable/chinatag" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <CheckBox
+            android:id="@+id/checkBox_shopfra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:button="@drawable/btn_check2"
+            android:text=""
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/ima_shopfra"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/checkBox_shopfra"
+            android:scaleType="fitXY"
+            android:src="@drawable/noima" />
+
+        <TextView
+            android:id="@+id/text_title_shopfra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ima_shopfra"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/ima_shopfra"
+            android:singleLine="true"
+            android:text=" "
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/text_remaind_shopfra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_title_shopfra"
+            android:layout_below="@+id/text_title_shopfra"
+            android:text="剩余 人次"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/text_remaind_shopfra"
+            android:layout_below="@+id/text_remaind_shopfra"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="数量"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/ima_lose"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/textView3"
+                android:src="@drawable/selector_substract" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="-1dp"
+                android:layout_toRightOf="@+id/ima_lose"
+                android:background="@drawable/shape_stroke"
+                android:ems="3"
+                android:gravity="center"
+                android:hint="1"
+                android:inputType="number" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/ima_add"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/editText1"
+                android:src="@drawable/selector_add" />
+
+            <TextView
+                android:id="@+id/text_price_shopfra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/ima_add"
+                android:text="￥"
+                android:textColor="@color/onebuy" />
+
+            <ImageView
+                android:id="@+id/ima_delete_shopfra"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/deleteicon" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

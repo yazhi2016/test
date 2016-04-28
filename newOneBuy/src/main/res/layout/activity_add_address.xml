@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.onebuy.AddAddressActivity" >
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/text_editaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="添加收货地址"
+            android:textColor="@color/bartextcolor"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/checkbox_shopfra_edit"
+            style="@style/style_bar_text"
+            android:layout_alignParentRight="true"
+            android:text="保存"
+            android:textColor="@color/bartextcolor" />
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/ima_back_bar_padding"
+                android:src="@drawable/backblack" />
+        </RelativeLayout>
+        
+          <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bar"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edit_name"
+            style="@style/style_addAddress_textsizeAndPadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/addaddress_edit_selector"
+            android:hint="请输入收件人姓名" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/edit_friend_phone"
+            style="@style/style_addAddress_textsizeAndPadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/addaddress_edit_selector"
+            android:hint="请输入联系电话"
+            android:inputType="number" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/edit_phone"
+            style="@style/style_addAddress_textsizeAndPadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/addaddress_edit_selector"
+            android:hint="请输入手机号码"
+            android:inputType="number" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/edit_location"
+            style="@style/style_addAddress_textsizeAndPadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/addaddress_edit_selector"
+            android:hint="请输入所在省" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/edit_street"
+            style="@style/style_addAddress_textsizeAndPadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/addaddress_edit_selector"
+            android:hint="请输入所在市" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/edit_detailAddress"
+            style="@style/style_addAddress_textsizeAndPadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/addaddress_edit_selector"
+            android:gravity="top"
+            android:hint="请输入所在县" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/edit_streetlAddress"
+            style="@style/style_addAddress_textsizeAndPadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/addaddress_edit_selector"
+            android:gravity="top"
+            android:hint="请输入所在街道" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/edit_postCode"
+            style="@style/style_addAddress_textsizeAndPadding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/addaddress_edit_selector"
+            android:hint="请填写邮编"
+            android:inputType="number" >
+        </EditText>
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="5dp"
+            android:button="@drawable/btn_check2"
+            android:text=" 设为默认地址"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>

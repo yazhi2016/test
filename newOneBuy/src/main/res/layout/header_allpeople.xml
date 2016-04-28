@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rela_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="10dp" >
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_height="1dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/lightgray"
+            android:layout_toLeftOf="@+id/textView1"
+            android:layout_centerVertical="true"
+            />
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="40dp"
+            android:background="@color/lightgray"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/textView1"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="累计注册人数"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_headerallpeople"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rela_text"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/lv_allpeople1"
+            android:layout_width="15dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_strokegray_white3"
+            android:dividerHeight="-1dp"
+            android:scrollbars="none" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/lv_allpeople2"
+            android:layout_width="15dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_strokegray_white3"
+            android:dividerHeight="-1dp"
+            android:scrollbars="none" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/lv_allpeople3"
+            android:layout_width="15dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_strokegray_white3"
+            android:dividerHeight="-1dp"
+            android:scrollbars="none" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/lv_allpeople4"
+            android:layout_width="15dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_strokegray_white3"
+            android:dividerHeight="-1dp"
+            android:scrollbars="none" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/lv_allpeople5"
+            android:layout_width="15dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_strokegray_white3"
+            android:dividerHeight="-1dp"
+            android:scrollbars="none" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/lv_allpeople6"
+            android:layout_width="15dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_strokegray_white3"
+            android:dividerHeight="-1dp"
+            android:scrollbars="none" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/lv_allpeople7"
+            android:layout_width="15dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_strokegray_white3"
+            android:dividerHeight="-1dp"
+            android:scrollbars="none" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/lv_allpeople8"
+            android:layout_width="15dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_strokegray_white3"
+            android:dividerHeight="-1dp"
+            android:scrollbars="none" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/lv_allpeople9"
+            android:layout_width="15dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_strokegray_white3"
+            android:dividerHeight="-1dp"
+            android:scrollbars="none"
+            android:visibility="gone" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/lv_allpeople10"
+            android:layout_width="15dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_strokegray_white3"
+            android:dividerHeight="-1dp"
+            android:scrollbars="none"
+            android:visibility="gone" >
+        </ListView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/linear_headerallpeople"
+        android:layout_marginTop="13dp"
+        android:visibility="invisible"
+        android:background="@color/gray" />
+
+</RelativeLayout>

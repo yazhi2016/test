@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">一元妙购</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <drawable name="lucency">#00000000</drawable>
+    <drawable name="halflucency">#55000000</drawable>
+    <drawable name="gray">#DEDEDE</drawable>
+    <drawable name="ligntgray2">#EAEAEA</drawable>
+    <drawable name="gray2">#F5F5F5</drawable>
+    <drawable name="progress_bg">#BFBFBF</drawable>
+    <drawable name="progress_progress">#FF6600</drawable>
+    <drawable name="black">#000000</drawable>
+    <drawable name="white">#ffffff</drawable>
+    <drawable name="drawable_address_edit">#C9C9C9</drawable>
+    <drawable name="onebuy">#DD2724</drawable>
+
+    <string name="title_activity_address">AddressActivity</string>
+    <string name="title_activity_add_address">AddAddressActivity</string>
+    <string name="title_activity_my_info">MyInfoActivity</string>
+    <string name="title_activity_change_qq">ChangeQQActivity</string>
+    <string name="title_activity_change_name">ChangeNameActivity</string>
+    <string name="title_activity_change_sign">ChangeSignActivity</string>
+    <string name="title_activity_set">SetActivity</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_change_pwd">ChangePwdActivity</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_ima_text">ImaTextActivity</string>
+    <string name="title_activity_all_show">AllShowActivity</string>
+    <string name="title_activity_show_detail">ShowDetailActivity</string>
+    <string name="title_activity_all_order">AllOrderActivity</string>
+    <string name="title_activity_show">ShowActivity</string>
+    <string name="title_activity_all_buy">AllBuyActivity</string>
+    <string name="title_activity_account_detail">AccountDetailActivity</string>
+    <string name="title_activity_charge">ChargeActivity</string>
+    <string name="title_activity_location">LocationActivity</string>
+    <string name="title_activity_time">TimeActivity</string>
+    <string name="title_activity_social_sign_up">SocialSignUpActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_location_two">LocationTwoActivity</string>
+    <string name="title_activity_share">ShareActivity</string>
+    <string name="title_activity_product_share">ProductShareActivity</string>
+    <string name="title_activity_my_win">MyWinActivity</string>
+    <string name="title_activity_my_show">MyShowActivity</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="title_activity_calculate_result">CalculateResultActivity</string>
+    <string name="title_activity_log_in">LogInActivity</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_my_win_detail">MyWinDetailActivity</string>
+    <string name="title_activity_choose_pic">ChoosePicActivity</string>
+    <string name="title_activity_agreement">AgreementActivity</string>
+    <string name="title_activity_exchange">ExchangeActivity</string>
+    <string name="title_activity_pay">PayActivity</string>
+    <string name="title_activity_forget_pwd">ForgetPwdActivity</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_idea">IdeaActivity</string>
+    <string name="title_activity_banner_detail">BannerDetailActivity</string>
+    <string name="title_activity_share_two">ShareTwoActivity</string>
+    <string name="title_activity_two_code">TwoCodeActivity</string>
+    <string name="title_activity_start">一元妙购</string>
+    <string name="_5">(本期共参与5人次)</string>
+
+</resources>

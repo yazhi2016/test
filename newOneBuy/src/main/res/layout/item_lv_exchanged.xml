@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rela_winner_mywinact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white"
+        android:paddingBottom="10dp"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/ima_winner_mywinact"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/noima" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/ima_winner_mywinact" >
+
+            <TextView
+                android:id="@+id/text_name_mywinact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="第一期"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text_name_mywinact"
+                android:layout_below="@+id/text_name_mywinact"
+                android:text="订单号：" />
+
+            <TextView
+                android:id="@+id/text_luckynum_mywinact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView21"
+                android:layout_toRightOf="@+id/textView21"
+                android:singleLine="true"
+                android:text=" " />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text_name_mywinact"
+                android:layout_below="@+id/textView21"
+                android:text="订单状态：" />
+
+            <TextView
+                android:id="@+id/text_time_mywinact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView23"
+                android:layout_toRightOf="@+id/textView23"
+                android:singleLine="true"
+                android:text=" "
+                android:textColor="@color/blue" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

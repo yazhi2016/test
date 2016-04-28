@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.onebuy.ChoosePicActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/halflucency" >
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/shape_corner_white_strokegray"
+            android:text="取消"
+            android:textSize="17sp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn1"
+            android:layout_marginBottom="-1dp"
+            android:background="@drawable/shape_corner_white_strokegray"
+            android:text="从相册选择"
+            android:textSize="17sp"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn2"
+            android:layout_marginBottom="-1dp"
+            android:textSize="17sp"
+            android:background="@drawable/shape_corner_white_strokegray"
+            android:text="拍照"
+            android:textColor="@color/black" />
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn3"
+            android:id="@+id/text_empty"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

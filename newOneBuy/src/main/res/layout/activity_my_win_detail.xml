@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.onebuy.MyWinDetailActivity" >
+
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="妙购详情"
+            android:textColor="@color/bartextcolor"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/ima_back_bar_padding"
+                android:src="@drawable/backblack" />
+        </RelativeLayout>
+        
+         <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_alignParentBottom="true"
+            />
+        
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/bar"
+        android:layout_centerHorizontal="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rela_winner_mywindetailact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white"
+                android:paddingBottom="10dp"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:id="@+id/ima_winner_mywindetailact"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/noima" />
+
+                <TextView
+                    android:id="@+id/text_name_mywindetailact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/ima_winner_mywindetailact"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/ima_winner_mywindetailact"
+                    android:text=" "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/text_name_mywindetailact"
+                    android:layout_below="@+id/text_name_mywindetailact"
+                    android:text="获奖者：" />
+
+                <TextView
+                    android:id="@+id/text_winner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textView21"
+                    android:layout_toRightOf="@+id/textView21"
+                    android:singleLine="true"
+                    android:text=" "
+                    android:textColor="@color/blue" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/text_name_mywindetailact"
+                    android:layout_below="@+id/textView21"
+                    android:text="揭晓时间：" />
+
+                <TextView
+                    android:id="@+id/text_time_mywindetailact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/textView23"
+                    android:layout_toRightOf="@+id/textView23"
+                    android:singleLine="true"
+                    android:text=" " />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView23"
+                    android:layout_below="@+id/textView23"
+                    android:text="订单状态：" />
+
+                <TextView
+                    android:id="@+id/text_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView23"
+                    android:layout_toRightOf="@+id/textView24"
+                    android:text=" " />
+
+                <Button
+                    android:id="@+id/btn_mywindetailact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignLeft="@+id/textView24"
+                    android:layout_below="@+id/text_state"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/shape_corner_onebuy"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/text_myCodeNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本期商品您共拥有" />
+
+                <TextView
+                    android:id="@+id/text_myCodeNum2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/text_myCodeNum"
+                    android:textColor="@color/onebuy"
+                    android:text=" " />
+
+                <TextView
+                    android:id="@+id/text_myCodeNum3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/text_myCodeNum2"
+                    android:text="个妙购码" />
+            </RelativeLayout>
+
+            <com.xinbo.widget.ListView4ScrollView
+                android:id="@+id/lv_mywindetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_commentnum1" >
+            </com.xinbo.widget.ListView4ScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

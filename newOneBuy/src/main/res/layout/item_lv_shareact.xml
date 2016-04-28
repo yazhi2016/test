@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rela_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="0.5dp"
+            android:layout_height="200dp"
+            android:layout_alignBottom="@+id/rela_body"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/rela_body"
+            android:layout_marginBottom="-8dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="-8dp"
+            android:background="@color/gray" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ima_shareact"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/noima" />
+
+        <RelativeLayout
+            android:id="@+id/rela_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/ima_shareact"
+            android:background="@drawable/gray"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/text_name_shareact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="1234679"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/textsize_shareact" />
+
+            <TextView
+                android:id="@+id/text_title_shareact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/text_name_shareact"
+                android:layout_alignBottom="@+id/text_name_shareact"
+                android:layout_toRightOf="@+id/text_name_shareact"
+                android:text=":我在晒单"
+                android:textSize="@dimen/textsize_shareact" />
+
+            <TextView
+                android:id="@+id/text_time_shareact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/text_title_shareact"
+                android:layout_alignBottom="@+id/text_title_shareact"
+                android:layout_toRightOf="@+id/text_title_shareact"
+                android:text="2014-10-10 12:15:12"
+                android:textSize="@dimen/textsize_shareact" />
+
+            <TextView
+                android:id="@+id/text_content_shareact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text_name_shareact"
+                android:layout_below="@+id/text_name_shareact"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="我在晒单"
+                android:textSize="@dimen/textsize_shareact" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text_name_shareact"
+                android:layout_below="@+id/text_content_shareact" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/like" />
+
+                <TextView
+                    android:id="@+id/text_likenum_shareact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imageView2"
+                    android:text="0人羡慕嫉妒"
+                    android:textSize="@dimen/textsize_shareact" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_content_shareact"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/relativeLayout1" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/comment2" />
+
+                <TextView
+                    android:id="@+id/text_commentnum_shareact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/imageView3"
+                    android:text="0条评论"
+                    android:textSize="@dimen/textsize_shareact" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ligntgray2" />
+
+    <LinearLayout
+        android:id="@+id/linear_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp" >
+
+        <RelativeLayout
+            android:id="@+id/rela_china"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="@dimen/imasize_chine_ten_homefra"
+                android:layout_height="@dimen/imasize_chine_ten_homefra"
+                android:layout_centerHorizontal="true"
+                android:padding="2dp"
+                android:src="@drawable/selector_allcity_homefra" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="全国推荐"
+                android:textSize="@dimen/chine_ten_homefra" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rela_ten"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="@dimen/imasize_chine_ten_homefra"
+                android:layout_height="@dimen/imasize_chine_ten_homefra"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/selector_ten_homefra" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="十元专区"
+                android:textSize="@dimen/chine_ten_homefra" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rela_hundred"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="@dimen/imasize_chine_ten_homefra"
+                android:layout_height="@dimen/imasize_chine_ten_homefra"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/selector_hundred_homefra" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="百元专区"
+                android:textSize="@dimen/chine_ten_homefra" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rela_share"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="@dimen/imasize_chine_ten_homefra"
+                android:layout_height="@dimen/imasize_chine_ten_homefra"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/selector_show_homefra" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="晒单专区"
+                android:textSize="@dimen/chine_ten_homefra" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@+id/linear_top"
+        android:visibility="visible"
+        android:background="@drawable/ligntgray2" />
+
+</RelativeLayout>

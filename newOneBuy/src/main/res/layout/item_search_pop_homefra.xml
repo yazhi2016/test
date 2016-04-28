@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rela_havething_popolocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightwhite"
+        android:paddingBottom="20dp" >
+
+        <GridView
+            android:id="@+id/gv_pop_homefra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/lightwhite"
+            android:horizontalSpacing="18dp"
+            android:numColumns="3"
+            android:verticalSpacing="15dp"
+            android:visibility="visible" >
+        </GridView>
+
+        <RelativeLayout
+            android:id="@+id/rela_changecity_poplocation"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/gv_pop_homefra"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/shape_strokegray_white" >
+
+            <TextView
+                android:id="@+id/text_nowcity_homefra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="当前城市：龙岩" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:text="更换 >"
+                android:textColor="@color/onebuy" />
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/rela_empty_poplocation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/rela_havething_popolocation"
+        android:background="@drawable/halflucency"
+        ></RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="de.hdodenhof.circleimageview">
+
+    <uses-sdk tools:overrideLibrary="android.support.v17.leanback, android.support.v7.appcompat, android.support.v4, android.support.graphics.drawable"
+        />
+    <application
+        />
+
+</manifest>

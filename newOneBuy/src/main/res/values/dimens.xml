@@ -1,0 +1,17 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="ima_back_bar_padding">12dip</dimen>
+    <dimen name="size_text_header5">12sp</dimen>
+    <dimen name="size_text_lvitem_homefra">11sp</dimen>
+    <dimen name="radiobutton_distance">10dp</dimen>
+    <dimen name="changePwdTextSize">16dp</dimen>
+    <dimen name="textsize_allorder">13sp</dimen>
+    <dimen name="chine_ten_homefra">15dp</dimen>
+    <dimen name="imasize_chine_ten_homefra">40dp</dimen>
+    <dimen name="textsize_location">16sp</dimen>
+    <dimen name="textsize_shareact">14sp</dimen>
+
+</resources>

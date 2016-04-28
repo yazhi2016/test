@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="onebuy">#D32725</color>
+    <color name="baronebuy">#D32725</color>
+    <color name="bartextcolor">#848484</color>
+    <color name="gray2">#A7A7A7</color>
+    <color name="gray3">#9E9E9E</color>
+    <color name="deepgray">#6D6D6D</color>
+    <color name="gray">#D5D5D5</color>
+    <color name="lucency">#00000000</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="blue">#22AAFF</color>
+    <color name="lightwhite">#F4F4F4</color>
+    <color name="orange">#FF9600</color>
+    <color name="lightorange">#F5F5E5</color>
+    <color name="lightgray">#eeeeee</color>
+
+</resources>
